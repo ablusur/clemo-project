@@ -127,3 +127,55 @@ a {
 }
 .box-text p {
 }
+
+/* bottom box area start */
+
+.bottom-box {
+  box-sizing: border-box;
+  display: grid;
+  gap: 10px;
+  margin: 50px auto;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six";
+}
+.b-box-child {
+  background-color: rgb(158, 152, 163);
+  width: auto;
+  padding: 20px;
+  text-align: justify;
+}
+.b-box-child:nth-child(1) {
+  grid-area: one;
+}
+.b-box-child:nth-child(2) {
+  grid-area: two;
+}
+.b-box-child:nth-child(3) {
+  grid-area: three;
+}
+.b-box-child:nth-child(4) {
+  grid-area: four;
+}
+.b-box-child:nth-child(5) {
+  grid-area: five;
+}
+.b-box-child:nth-child(6) {
+  grid-area: six;
+}
+
+@media (min-width: 700px) {
+  .bottom-box {
+    grid-template-areas:
+      "one two three"
+      "one two three"
+      "four two six"
+      "four five six"
+      "four five six" !important;
+  }
+}
+/* bottom box area end */
