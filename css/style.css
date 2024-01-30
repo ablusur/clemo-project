@@ -54,7 +54,6 @@ a {
   box-sizing: border-box;
   display: grid;
   gap: 10px;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   grid-template-areas:
     "one"
     "two"
@@ -92,16 +91,6 @@ a {
     margin: 100px auto !important;
   }
 }
-
-/* @media (min-width: 320px) {
-  .box-area {
-    grid-template-areas:
-      "one two"
-      "four three"
-      "five six";
-    margin: 10px auto;
-  }
-} */
 
 .box-img {
   background-color: rgb(5, 104, 104);
@@ -179,3 +168,5 @@ a {
   }
 }
 /* bottom box area end */
+
+/* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
